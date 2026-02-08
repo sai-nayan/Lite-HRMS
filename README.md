@@ -65,7 +65,7 @@ lite-hrms/
 ```
 ---
 
-## ⚙️ Running the Project Locally
+## ⚙️ Running the Project Locally (Optional)
 
 ### Backend Setup
 ```bash
@@ -77,6 +77,9 @@ uvicorn app.main:app --reload
 ```
 Backend will run at:
 http://localhost:8000
+
+Configure backend URL in `.env`:
+VITE_API_BASE_URL=https://lite-hrms-backend.onrender.com
 
 ### Frontend Setup
 ```bash
@@ -90,12 +93,13 @@ http://localhost:5173
 
 ---
 
-## 🌐 Deployment
-- Frontend is deployed on Vercel
-- Backend API is deployed on Render
+## 🌐 Deployment (Actual URLs)
+- Frontend is deployed on Vercel (Frontend URL: https://lite-hrms.vercel.app/)
+- Backend API is deployed on Render (Backend URL: https://lite-hrms-backend.onrender.com)
 - Frontend communicates with the live backend API via environment variables
 
 Both frontend and backend are fully deployed and publicly accessible.
+**(Final URL: https://lite-hrms.vercel.app/)**
 
 ---
 
