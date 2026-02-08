@@ -24,6 +24,15 @@ VITE_API_BASE_URL=https://lite-hrms-backend.onrender.com
 ```
 3) Start dev server: `npm run dev`
 
+## Deploying to Vercel
+- Frontend URL (set after deploy): **https://lite-hrms.vercel.app/**
+- Environment variable (Project Settings → Environment Variables):
+  - `VITE_API_BASE_URL` = `https://lite-hrms-backend.onrender.com`
+- Build command: `npm run build`
+- Output directory: `dist`
+- Framework preset: Vite (React)
+- For preview/production, set the same `VITE_API_BASE_URL` unless you point to another backend.
+
 ## Design Decisions
 - Optimistic UI for attendance keeps the UI responsive despite POST-only backend.
 - localStorage is used to persist attendance records and the active tab, matching the backend’s lack of GET for attendance.
